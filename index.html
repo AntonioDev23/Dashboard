@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- KPIs -->
+        <div class="kpi">
+            <div class="kpi-item">
+                <h3>Total de Vendas</h3>
+                <p>2500</p>
+            </div>
+            <div class="kpi-item">
+                <h3>Usuários Ativos</h3>
+                <p>180</p>
+            </div>
+            <div class="kpi-item">
+                <h3>Taxa de Conversão</h3>
+                <p>4.5%</p>
+            </div>
+        </div>
+    
+        <!-- Gráficos -->
+        <div class="card">
+            <h2>Vendas por Mês</h2>
+            <canvas id="salesChart" class="chart"></canvas>
+        </div>
+    
+        <div class="card">
+            <h2>Distribuição de Usuários</h2>
+            <canvas id="usersChart" class="chart"></canvas>
+        </div>
+    
+        <!-- Alertas -->
+        <div class="alert">Alerta: Estoque baixo de produto X!</div>
+    
+        <!-- Filtro de Data -->
+        <div class="filter">
+            <input type="date" id="startDate" style="padding: 10px; border-radius: 5px;" />
+            <input type="date" id="endDate" style="padding: 10px; border-radius: 5px;" />
+        </div>
+    
+        <!-- Map -->
+        <div class="map"></div>
+    
+        <!-- Tabela Dinâmica -->
+        <div class="card">
+            <h2>Vendas Recentes</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Produto A</td>
+                        <td>01/02/2025</td>
+                        <td>R$ 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Produto B</td>
+                        <td>01/02/2025</td>
+                        <td>R$ 200,00</td>
+                    </tr>
+                    <!-- Mais dados podem ser adicionados aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
