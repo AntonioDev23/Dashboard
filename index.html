@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -33,7 +32,9 @@
     
         <div class="card">
             <h2>Distribuição de Usuários</h2>
-            <canvas id="usersChart" class="chart"></canvas>
+            <div class="chart-container">
+                <canvas id="usersChart" class="chart"></canvas>
+            </div>
         </div>
     
         <!-- Alertas -->
@@ -78,7 +79,9 @@
             </table>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-</body>
+   <!-- Carregamento do Chart.js -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+   <!-- Carregamento do seu script.js -->
+   <script src="script.js"></script>
 </html>
